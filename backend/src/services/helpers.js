@@ -10,3 +10,11 @@ export const userView = (userInfos) => {
         bio: userInfos.bio,
     };
 };
+
+export const sendResponse = (res, result) => {
+    res.status(200).json({ result });
+};
+
+export const getUserId = (req) => {
+    return req.authenticatedUserId;
+};
