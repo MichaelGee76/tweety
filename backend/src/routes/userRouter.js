@@ -1,7 +1,6 @@
 import express from "express";
 import { doJwtAuth } from "../middlewares/authentication.js";
 import { userController } from "../controllers/userController.js";
-import { updateUserInfo } from "./../services/User/updateUserInfo.js";
 
 export const userRoutes = express
     .Router()
