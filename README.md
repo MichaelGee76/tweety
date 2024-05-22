@@ -42,6 +42,7 @@ npm start
 The server will run on port 3011 by default. You can access it in your browser at http://localhost:3011.
 
 API Endpoints
+
 User Management
 GET /api/v1/user/me: Get the logged-in user's information.
 GET /api/v1/user: Get all user information.
