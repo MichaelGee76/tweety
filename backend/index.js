@@ -3,6 +3,9 @@ import dotenv from "dotenv";
 import cors from "cors";
 import morgan from "morgan";
 import { connect2DB } from "./src/models/index.js";
+import { userRoutes } from "./src/routes/userRouter.js";
+import { tweetRoutes } from "./src/routes/tweetRouter.js";
+import { commentRoutes } from "./src/routes/commentRouter.js";
 
 dotenv.config();
 
@@ -14,9 +17,9 @@ app.use(cors());
 app.use(morgan("dev"));
 app.use(express.json());
 
-// app.use("/api/v1/user");
-// app.use("/api/v1/tweets");
-// app.use("/api/v1/comments");
+app.use("/api/v1/user", userRoutes);
+app.use("/api/v1/tweets", tweetRoutes);
+app.use("/api/v1/comments", commentRoutes);
 
 try {
     await connect2DB();
