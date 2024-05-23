@@ -45,6 +45,12 @@ const verifyEmailCtrl = asyncHandler(async (req, res) => {
     sendResponse(res, result);
 });
 
+const postRefreshTokenCtrl = asyncHandler(async (req, res) => {
+    const userId = getUserId(req);
+    const result = await UserServices.refreshToken(userId);
+    sendResponse(res, result);
+});
+
 export const userController = {
     getUserInfosCtrl,
     getAllUserInfosCtrl,
@@ -53,4 +59,5 @@ export const userController = {
     patchUserInfoCtrl,
     deleteUserInfoCtrl,
     verifyEmailCtrl,
+    postRefreshTokenCtrl,
 };

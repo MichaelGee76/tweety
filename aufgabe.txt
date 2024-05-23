@@ -1,0 +1,26 @@
+Zwitscher (Twitter Clone)
+
+Kern-Features von 'Zwitscher':
+User können...
+* sich einen Account anlegen (damit sie Inhalte sehen können)
+* sich (ohne Verifizierung) einloggen
+* im eingeloggten Account ihre E-Mail verifizieren (zB 6-digit-code)
+User können (nach Verfizierung)...
+* Tweets Posten
+* Tweets Bearbeiten und Löschen (nur der Inhaber)
+* auf einen Tweet mit einem Kommentar antworten
+* einem anderen User folgen und entfolgen
+* User sehen einen chronologischen Feed (besteht ausschließlich aus eigenen sowie Tweets jener User denen man folgt)
+
+Vorschläge Bonus Features (Gerne eigene Ideen einbringen):
+* Profil-Statistik (# Followers, # Following, # Posts) per User
+* Tweets liken ❤️ (Anzahl der Likes ist auf dem Tweet zu sehen)
+* Retweets: Tweets anderer User werden zu eigenen Tweets - man kann aber immernoch zum Originalen Tweet springen
+* Nach dem Bearbeiten eine Tweets wird ein 'Zuletzt bearbeitet: <Datum>' vermerkt
+
+Aufgaben:
+* Überlege dir wie das Datenmodel aussieht (welche Entitäten, Felder und Beziehungen gibt es?)
+* Überlege dir die nötigen Endpunkte
+* Überlege dir die (wichtigsten) Pages und Komponenten im Frontend
+* Setze die Kern-Features um, diesmal ebend Backend und Frontend
+* Setze erst danach Bonus-Features um, du kannst gerne auch, wie erwähnt, eigene Features überlegen und umsetzen
